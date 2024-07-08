@@ -1,5 +1,8 @@
+
+// main
 document.getElementById("winsTbl").addEventListener("click", openWinsTbl);
 
+// functions
 function openWinsTbl() {
     let winsTbl = localStorage.getItem("TicTacToeWinners");
     if (winsTbl == null) {
@@ -17,7 +20,6 @@ function openWinsTbl() {
     parsedTblItems.forEach(item => {
         numOfPlayers: 1,
             tableHTML += `<tr><td>${item.player}</td><td>${item.numOfPlayers}</td><td>${item.date}</td><td>${item.time}</td></tr>`;
-
     });
     tableHTML += '</tbody></table>';
 

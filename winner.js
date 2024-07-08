@@ -1,6 +1,8 @@
 
+// imports
 import { board, player } from "./gameCommon.js";
 
+// globals
 let winPredicate = [
     [0, 1, 2],
     [3, 4, 5],
@@ -12,6 +14,7 @@ let winPredicate = [
     [2, 4, 6]
 ];
 
+//classes
 class Winner {
     player;
     numOfPlayers;
@@ -38,11 +41,12 @@ class Winner {
     }
 }
 
+// functions
 export function getPotentialWinner() {
     return player == "X" ? "O" : "X";
 }
 
-export function checkWinner(potentialWinner) {
+function checkWinner(potentialWinner) {
     if (winPredicate.some((value) => {
 
         if (value.every((item) =>
@@ -70,7 +74,7 @@ export function declareWinningStatus(numOfPlayers, potentialWinner) {
     return 0;
 }
 
-export function declareWinner(winner) {
+function declareWinner(winner) {
     console.log("winner in some");
 
     document.querySelector(".subtitle").innerHTML = "the winner is " + winner;

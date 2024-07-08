@@ -1,10 +1,13 @@
 
+// globals
 export let player = "X";
 export let board = ["", "", "", "", "", "", "", "", ""];
 
+// main
 document.querySelector(".loadGame").addEventListener('click', loadGame);
 document.querySelector(".restart-button").addEventListener("click", restartGame);
 
+// functions
 export function loadGame() {
     let storageBoard = localStorage.getItem("TicTacToeBoard");
     if (storageBoard != null) {
