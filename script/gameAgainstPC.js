@@ -1,6 +1,6 @@
 // imports
 import { declareWinningStatus, getPotentialWinner } from "./winner.js";
-import { loadGame, board, makeMove, restartGame } from "./gameCommon.js";
+import { board, makeMove } from "./gameCommon.js";
 
 // globals
 let numOfPlayers = 1;

@@ -168,7 +168,7 @@ h1 {
 }
 
 #bg {
-  background-image: url("./tic_tac_toe.png");
+  background-image: url("./images/tic_tac_toe.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -189,7 +189,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./tic_tac_toe.png");
+  background-image: url("./images/tic_tac_toe.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
